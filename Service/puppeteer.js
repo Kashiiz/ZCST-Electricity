@@ -20,7 +20,7 @@ exports.login = async () => {
     resolve(res);
   });
 
-  //await browser.close();
+  await browser.close();
 };
 
 const sumbitInfo = async (page) => {

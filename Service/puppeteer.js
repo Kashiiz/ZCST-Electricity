@@ -17,10 +17,11 @@ exports.login = async () => {
 
     await sumbitInfo(page)
     let res = await getASPXAUTH(page);
+    await browser.close();
     resolve(res);
   });
 
-  await browser.close();
+  
 };
 
 const sumbitInfo = async (page) => {
